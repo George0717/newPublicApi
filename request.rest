@@ -1,0 +1,32 @@
+GET http://localhost:5000/users
+
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Pizza",
+    "harga" : 89000,
+    "gambar": "https://images.pexels.com/photos/2909821/pexels-photo-2909821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+}
+
+###
+
+PATCH http://localhost:5000/users/63be682f7e47824e11bff405
+Content-Type: application/json
+
+{
+    "name" : "Pizza",
+    "harga" : 89000,
+    "gambar": "https://images.pexels.com/photos/2909821/pexels-photo-2909821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+}
+
+DELETE  http://localhost:5000/users/63be682f7e47824e11bff405
+Content-Type: application/json
+
+{
+    "name" : "Pizza",
+    "harga" : 89000,
+    "gambar": "https://images.pexels.com/photos/2909821/pexels-photo-2909821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+}
